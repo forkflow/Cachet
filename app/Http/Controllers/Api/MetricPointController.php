@@ -13,7 +13,7 @@
 
 namespace CachetHQ\Cachet\Http\Controllers\Api;
 
-use CachetHQ\Cachet\Repositories\MetricPoint\MetricPointRepository;
+use CachetHQ\Cachet\Models\MetricPoint;
 use GrahamCampbell\Binput\Facades\Binput;
 
 class MetricPointController extends AbstractApiController
@@ -21,16 +21,16 @@ class MetricPointController extends AbstractApiController
     /**
      * The metric point repository instance.
      *
-     * @var \CachetHQ\Cachet\Repositories\MetricPoint\MetricPointRepository
+     * @var \CachetHQ\Cachet\Models\MetricPoint
      */
     protected $metricPoint;
 
     /**
      * Create a new metric point controller instance.
      *
-     * @param \CachetHQ\Cachet\Repositories\MetricPoint\MetricPointRepository $metricPoint
+     * @param \CachetHQ\Cachet\Models\MetricPoint $metricPoint
      */
-    public function __construct(MetricPointRepository $metricPoint)
+    public function __construct(MetircPoint $metricPoint)
     {
         $this->metricPoint = $metricPoint;
     }
