@@ -43,7 +43,7 @@ class Component extends Model implements HasPresenter
      */
     protected $rules = [
         'user_id' => 'integer|required',
-        'name'    => 'required',
+        'name'    => 'required|string',
         'status'  => 'integer|required',
         'link'    => 'url',
     ];
